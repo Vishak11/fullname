@@ -16,7 +16,7 @@ const App = () => {
 
   return (
     <div className="name-form-container">
-      <h1>Name Display Form</h1>
+      <h1>Full Name Display</h1> 
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="first-name">First Name:</label>
@@ -25,7 +25,7 @@ const App = () => {
             id="first-name"
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
-            required 
+            required
           />
         </div>
         <div>
@@ -35,13 +35,14 @@ const App = () => {
             id="last-name"
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
-            required
+            required 
           />
         </div>
         <button type="submit">Submit</button>
       </form>
-      {fullName && <h2>Full Name: {fullName}</h2>} 
+      {fullName && <h2>Full Name: {fullName}</h2>}
     </div>
   );
 };
+
 export default App;
