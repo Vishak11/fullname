@@ -9,8 +9,7 @@ const App = () => {
     e.preventDefault(); // Prevent default form submission
     if (firstName && lastName) {
       setFullName(`${firstName} ${lastName}`);
-      setFirstName(''); // Clear input fields
-      setLastName('');
+      
     }
   };
 
